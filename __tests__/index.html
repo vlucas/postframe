@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <head>
+      <title>Postframe.js 2.0</title>
+    </head>
+    <iframe id="iframeEl" src="./iframe.html" />
+    <script src="./postframe.js"></script>
+    <script>
+      const Postframe = window.Postframe;
+      window.addEventListener('load', async () => {
+        const postframe = new Postframe('*');
+
+        const res = await postframe.send('pf_init');
+
+        console.log('Frame response = ', res);
+      });
+    </script>
+  </body>
+</html>
