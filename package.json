@@ -1,5 +1,5 @@
 {
-  "name": "postframe",
+  "name": "postframejs",
   "version": "1.0.0",
   "description": "Simplified postMessage communication between frames",
   "main": "dist/index.js",
